@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:vm="clr-namespace:RxReminder.ViewModels"
+             x:Class="RxReminder.Views.MedicationListView"
+             Title="My Medications">
+
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="*" />
+        </Grid.RowDefinitions>
+
+        <!-- Button to add new medication -->
+        <Button Text="Add New Medication" 
+                VerticalOptions="Start" 
+                HorizontalOptions="FillAndExpand" 
+                Command="{Binding AddNewMedicationCommand}" />
+
+        <!-- CollectionView to display the list of medications -->
+        <CollectionView Grid.Row="1" ItemsSource="{Binding Medications}"
+                        SelectionMode="Single"
+                        SelectionChanged="OnMedicationSelected">
+            <CollectionView.ItemTemplate>
+                <DataTemplate>
+                    <Frame BorderColor="LightGray" CornerRadius="10" Padding="10" Margin="5">
+                        <Label Text="{Binding Name}" FontSize="Medium" />
+                    </Frame>
+                </DataTemplate>
+            </CollectionView.ItemTemplate>
+        </CollectionView>
+    </Grid>
+</ContentPage>

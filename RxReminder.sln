@@ -1,0 +1,27 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.10.35027.167
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RxReminder", "RxReminder\RxReminder.csproj", "{7FFDB5EF-49D7-472C-9031-274B783F5AE0}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{7FFDB5EF-49D7-472C-9031-274B783F5AE0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7FFDB5EF-49D7-472C-9031-274B783F5AE0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7FFDB5EF-49D7-472C-9031-274B783F5AE0}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{7FFDB5EF-49D7-472C-9031-274B783F5AE0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7FFDB5EF-49D7-472C-9031-274B783F5AE0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7FFDB5EF-49D7-472C-9031-274B783F5AE0}.Release|Any CPU.Deploy.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {37CA27C9-254E-4313-9234-9D545BC20AEA}
+	EndGlobalSection
+EndGlobal

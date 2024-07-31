@@ -1,0 +1,122 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\wheel\\source\\repos\\RxReminder\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{7FFDB5EF-49D7-472C-9031-274B783F5AE0}|RxReminder\\RxReminder.csproj|c:\\users\\wheel\\source\\repos\\rxreminder\\rxreminder\\views\\medicationlistview.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7FFDB5EF-49D7-472C-9031-274B783F5AE0}|RxReminder\\RxReminder.csproj|solutionrelative:rxreminder\\views\\medicationlistview.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7FFDB5EF-49D7-472C-9031-274B783F5AE0}|RxReminder\\RxReminder.csproj|c:\\users\\wheel\\source\\repos\\rxreminder\\rxreminder\\views\\medicationdetailview.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7FFDB5EF-49D7-472C-9031-274B783F5AE0}|RxReminder\\RxReminder.csproj|solutionrelative:rxreminder\\views\\medicationdetailview.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7FFDB5EF-49D7-472C-9031-274B783F5AE0}|RxReminder\\RxReminder.csproj|c:\\users\\wheel\\source\\repos\\rxreminder\\rxreminder\\views\\medicationlistview.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{7FFDB5EF-49D7-472C-9031-274B783F5AE0}|RxReminder\\RxReminder.csproj|solutionrelative:rxreminder\\views\\medicationlistview.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7FFDB5EF-49D7-472C-9031-274B783F5AE0}|RxReminder\\RxReminder.csproj|c:\\users\\wheel\\source\\repos\\rxreminder\\rxreminder\\views\\medicationdetailview.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{7FFDB5EF-49D7-472C-9031-274B783F5AE0}|RxReminder\\RxReminder.csproj|solutionrelative:rxreminder\\views\\medicationdetailview.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7FFDB5EF-49D7-472C-9031-274B783F5AE0}|RxReminder\\RxReminder.csproj|c:\\users\\wheel\\source\\repos\\rxreminder\\rxreminder\\viewmodels\\medicationdetailviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7FFDB5EF-49D7-472C-9031-274B783F5AE0}|RxReminder\\RxReminder.csproj|solutionrelative:rxreminder\\viewmodels\\medicationdetailviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7FFDB5EF-49D7-472C-9031-274B783F5AE0}|RxReminder\\RxReminder.csproj|c:\\users\\wheel\\source\\repos\\rxreminder\\rxreminder\\appshell.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7FFDB5EF-49D7-472C-9031-274B783F5AE0}|RxReminder\\RxReminder.csproj|solutionrelative:rxreminder\\appshell.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 2,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "MedicationDetailView.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\wheel\\source\\repos\\RxReminder\\RxReminder\\Views\\MedicationDetailView.xaml.cs",
+              "RelativeDocumentMoniker": "RxReminder\\Views\\MedicationDetailView.xaml.cs",
+              "ToolTip": "C:\\Users\\wheel\\source\\repos\\RxReminder\\RxReminder\\Views\\MedicationDetailView.xaml.cs",
+              "RelativeToolTip": "RxReminder\\Views\\MedicationDetailView.xaml.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABAAAAAeAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-29T20:05:06.943Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "MedicationListView.xaml",
+              "DocumentMoniker": "C:\\Users\\wheel\\source\\repos\\RxReminder\\RxReminder\\Views\\MedicationListView.xaml",
+              "RelativeDocumentMoniker": "RxReminder\\Views\\MedicationListView.xaml",
+              "ToolTip": "C:\\Users\\wheel\\source\\repos\\RxReminder\\RxReminder\\Views\\MedicationListView.xaml",
+              "RelativeToolTip": "RxReminder\\Views\\MedicationListView.xaml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABYAAABAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-07-29T19:54:59.784Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "MedicationListView.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\wheel\\source\\repos\\RxReminder\\RxReminder\\Views\\MedicationListView.xaml.cs",
+              "RelativeDocumentMoniker": "RxReminder\\Views\\MedicationListView.xaml.cs",
+              "ToolTip": "C:\\Users\\wheel\\source\\repos\\RxReminder\\RxReminder\\Views\\MedicationListView.xaml.cs",
+              "RelativeToolTip": "RxReminder\\Views\\MedicationListView.xaml.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABoAAAA5AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-29T20:03:01.809Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "MedicationDetailView.xaml",
+              "DocumentMoniker": "C:\\Users\\wheel\\source\\repos\\RxReminder\\RxReminder\\Views\\MedicationDetailView.xaml",
+              "RelativeDocumentMoniker": "RxReminder\\Views\\MedicationDetailView.xaml",
+              "ToolTip": "C:\\Users\\wheel\\source\\repos\\RxReminder\\RxReminder\\Views\\MedicationDetailView.xaml",
+              "RelativeToolTip": "RxReminder\\Views\\MedicationDetailView.xaml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA8AAAAiAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-07-29T20:01:12.421Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "MedicationDetailViewModel.cs",
+              "DocumentMoniker": "C:\\Users\\wheel\\source\\repos\\RxReminder\\RxReminder\\ViewModels\\MedicationDetailViewModel.cs",
+              "RelativeDocumentMoniker": "RxReminder\\ViewModels\\MedicationDetailViewModel.cs",
+              "ToolTip": "C:\\Users\\wheel\\source\\repos\\RxReminder\\RxReminder\\ViewModels\\MedicationDetailViewModel.cs",
+              "RelativeToolTip": "RxReminder\\ViewModels\\MedicationDetailViewModel.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAACAAAAAwAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-29T20:00:33.971Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "AppShell.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\wheel\\source\\repos\\RxReminder\\RxReminder\\AppShell.xaml.cs",
+              "RelativeDocumentMoniker": "RxReminder\\AppShell.xaml.cs",
+              "ToolTip": "C:\\Users\\wheel\\source\\repos\\RxReminder\\RxReminder\\AppShell.xaml.cs",
+              "RelativeToolTip": "RxReminder\\AppShell.xaml.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAABeAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-29T20:04:36.348Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
