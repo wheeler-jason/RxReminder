@@ -31,3 +31,13 @@
         </CollectionView>
     </Grid>
 </ContentPage>
+    
+<!--
+    
+TODO:
+- Add more details to collectionview items
+- Add command to navigate to MedicationDetailView when item is selected
+    - Remove OnMedicationSelected event handler
+    
+-->
+    

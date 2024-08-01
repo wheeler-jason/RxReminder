@@ -3,19 +3,70 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:vm="clr-namespace:RxReminder.ViewModels"
              x:Class="RxReminder.Views.MedicationInputForm"
+             x:DataType="vm:MedicationInputFormViewModel"
              Title="Add New Medication">
 
-    <StackLayout Padding="10">
-        <Entry Placeholder="Name" Text="{Binding Name}" />
-        <Entry Placeholder="Dosage" Text="{Binding Dosage}" />
-        <Entry Placeholder="Notes" Text="{Binding Notes}" />
-        <Entry Placeholder="Total Doses" Keyboard="Numeric" Text="{Binding TotalDoses}" />
-        <Entry Placeholder="Refill Threshold" Keyboard="Numeric" Text="{Binding RefillThreshold}" />
-        <Entry Placeholder="Rx Number" Text="{Binding RxNumber}" />
+    <Grid Padding="10">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="Auto" />
+            <ColumnDefinition Width="*" />
+        </Grid.ColumnDefinitions>
 
-        <Button Text="Save" 
-                VerticalOptions="EndAndExpand" 
-                HorizontalOptions="FillAndExpand" 
-                Command="{Binding SaveMedicationCommand}" />
-    </StackLayout>
+        <!-- Name Entry -->
+        <Label Grid.Row="0" Grid.Column="0" Text="Name:" VerticalOptions="End" />
+        <Entry Grid.Row="0" Grid.Column="1" Placeholder="Name" Text="{Binding Name}" 
+               VerticalTextAlignment="End" />
+
+        <!-- Rx Number Entry -->
+        <Label Grid.Row="1" Grid.Column="0" Text="Rx Number:" VerticalOptions="End" />
+        <Entry Grid.Row="1" Grid.Column="1" Placeholder="Rx Number" Text="{Binding RxNumber}" 
+               VerticalTextAlignment="End" Margin="0,20,0,0" />
+
+        <!-- Dosage Entry -->
+        <Label Grid.Row="2" Grid.Column="0" Text="Dosage:" VerticalOptions="End" />
+        <Entry Grid.Row="2" Grid.Column="1" Placeholder="Dosage" Text="{Binding Dosage}" 
+               VerticalTextAlignment="End" Margin="0,20,0,0" />
+
+        <!-- Notes Entry -->
+        <Label Grid.Row="3" Grid.Column="0" Text="Notes:" VerticalOptions="End" />
+        <Entry Grid.Row="3" Grid.Column="1" Placeholder="Notes" Text="{Binding Notes}" 
+               VerticalTextAlignment="End" Margin="0,20,0,0" />
+
+        <!-- Total Doses -->
+        <Label Grid.Row="4" Grid.Column="0" Text="Total Doses:" VerticalOptions="End" />
+        <Entry Grid.Row="4" Grid.Column="1" Placeholder="Total Doses" Keyboard="Numeric" 
+               Text="{Binding TotalDoses}" VerticalTextAlignment="End" Margin="0,20,0,0" />
+
+        <!-- Refill Threshold -->
+        <Label Grid.Row="5" Grid.Column="0" Text="Refill Threshold:" VerticalOptions="End" />
+        <Entry Grid.Row="5" Grid.Column="1" Placeholder="Refill Threshold" Keyboard="Numeric" 
+               Text="{Binding RefillThreshold}" VerticalTextAlignment="End" Margin="0,20,0,0" />
+
+        <!-- Save Button -->
+        <Button Grid.Row="6" Grid.ColumnSpan="2" Text="Save" 
+            VerticalOptions="EndAndExpand" 
+            HorizontalOptions="FillAndExpand" 
+            Command="{Binding SaveMedicationCommand}" 
+            Margin="0,20,0,0"/>
+    </Grid>
 </ContentPage>
+
+<!--
+
+TODO:
+    
+- Add validation to ensure required fields are filled out correctly
+- Add Reminders section to allow user to set reminders for medication
+- Add database functionality to save new medication to database
+
+-->

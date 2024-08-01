@@ -29,7 +29,7 @@
     <AppXManifest Include="C:\Users\wheel\source\repos\RxReminder\RxReminder\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2024-07-29T20:16:50.127</Modified>
+      <Modified>2024-08-01T14:44:20.022</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
@@ -43,11 +43,11 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\wheel\source\repos\RxReminder\RxReminder\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\RxReminder.dll">
       <PackagePath>RxReminder.dll</PackagePath>
-      <Modified>2024-07-29T20:16:49.811</Modified>
+      <Modified>2024-08-01T14:44:19.787</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\wheel\source\repos\RxReminder\RxReminder\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\apphost.exe">
       <PackagePath>RxReminder.exe</PackagePath>
-      <Modified>2024-07-29T20:16:49.814</Modified>
+      <Modified>2024-08-01T14:44:19.790</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\wheel\source\repos\RxReminder\RxReminder\Resources\Raw\AboutAssets.txt">
       <PackagePath>AboutAssets.txt</PackagePath>
