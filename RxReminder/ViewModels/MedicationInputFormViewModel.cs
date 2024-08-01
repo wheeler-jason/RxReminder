@@ -26,30 +26,93 @@ namespace RxReminder.ViewModels
         [ObservableProperty]
         private string rxNumber;
 
-        public ObservableCollection<Medication> Medications { get; }
+        [ObservableProperty]
+        private string pageTitle;
 
-        public MedicationInputFormViewModel(ObservableCollection<Medication> medications)
+        [ObservableProperty]
+        private bool isEditing;
+
+        public ObservableCollection<Medication> Medications { get; set; }
+
+        public Medication ExistingMedication { get; private set; }
+
+        public MedicationInputFormViewModel()
+        {
+        }
+
+        public void Initialize(ObservableCollection<Medication> medications, Medication medication)
         {
             Medications = medications;
+            ExistingMedication = medication;
+
+            if (medication != null)
+            {
+                IsEditing = true;
+                PageTitle = "Medication Details";
+                Name = medication.Name;
+                Dosage = medication.Dosage;
+                Notes = medication.Notes;
+                TotalDoses = medication.TotalDoses;
+                RefillThreshold = medication.RefillThreshold;
+                RxNumber = medication.RxNumber;
+            }
+            else
+            {
+                IsEditing = false;
+                PageTitle = "Add New Medication";
+                Name = string.Empty;
+                Dosage = string.Empty;
+                Notes = string.Empty;
+                TotalDoses = 0;
+                RefillThreshold = 0;
+                RxNumber = string.Empty;
+            }
         }
 
         [RelayCommand]
         private async Task SaveMedicationAsync()
         {
-            var newMedication = new Medication
+            if (IsEditing)
             {
-                Name = Name,
-                Dosage = Dosage,
-                Notes = Notes,
-                TotalDoses = TotalDoses,
-                RefillThreshold = RefillThreshold,
-                RxNumber = RxNumber
-            };
+                ExistingMedication.Name = Name;
+                ExistingMedication.Dosage = Dosage;
+                ExistingMedication.Notes = Notes;
+                ExistingMedication.TotalDoses = TotalDoses;
+                ExistingMedication.RefillThreshold = RefillThreshold;
+                ExistingMedication.RxNumber = RxNumber;
 
-            Medications.Add(newMedication);
+                var index = Medications.IndexOf(ExistingMedication);
+                if (index != -1)
+                {
+                    Medications[index] = ExistingMedication;
+                }
+            }
+            else
+            {
+                var newMedication = new Medication
+                {
+                    Name = Name,
+                    Dosage = Dosage,
+                    Notes = Notes,
+                    TotalDoses = TotalDoses,
+                    RefillThreshold = RefillThreshold,
+                    RxNumber = RxNumber
+                };
 
-            // Navigate back to MedicationListView
+                Medications.Add(newMedication);
+            }
+
             await Shell.Current.GoToAsync("..");
+        }
+
+        [RelayCommand]
+        private async Task DeleteMedicationAsync()
+        {
+            if (IsEditing && ExistingMedication != null)
+            {
+                Medications.Remove(ExistingMedication);
+                await Shell.Current.GoToAsync("..");
+            }
         }
     }
 }

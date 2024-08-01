@@ -1,26 +1,30 @@
 using Microsoft.Maui.Controls;
 using RxReminder.ViewModels;
-using System.Collections.ObjectModel;
 using RxReminder.Models;
+using System.Collections.ObjectModel;
 
 namespace RxReminder.Views
 {
+    [QueryProperty(nameof(Medication), "Medication")]
     [QueryProperty(nameof(Medications), "Medications")]
     public partial class MedicationInputForm : ContentPage
     {
+        public Medication Medication { get; set; }
         public ObservableCollection<Medication> Medications { get; set; }
 
         public MedicationInputForm()
         {
             InitializeComponent();
+            BindingContext = new MedicationInputFormViewModel();
         }
 
         protected override void OnAppearing()
         {
             base.OnAppearing();
-            if (BindingContext == null)
+
+            if (BindingContext is MedicationInputFormViewModel viewModel)
             {
-                BindingContext = new MedicationInputFormViewModel(Medications);
+                viewModel.Initialize(Medications, Medication);
             }
         }
     }

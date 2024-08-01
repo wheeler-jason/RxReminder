@@ -18,7 +18,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("RxReminder")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0+8da319abf9d9110ef9bb568ff70fce294bd5ff50")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0+225e93d917ac3136d2483e7da6fd48ed4d74373f")]
 [assembly: System.Reflection.AssemblyProductAttribute("RxReminder")]
 [assembly: System.Reflection.AssemblyTitleAttribute("RxReminder")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

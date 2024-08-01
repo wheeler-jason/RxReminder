@@ -65,9 +65,6 @@
 	</ItemGroup>
 
 	<ItemGroup>
-	  <MauiXaml Update="Views\MedicationDetailView.xaml">
-	    <Generator>MSBuild:Compile</Generator>
-	  </MauiXaml>
 	  <MauiXaml Update="Views\MedicationInputForm.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>

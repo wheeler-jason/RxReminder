@@ -9,7 +9,6 @@ namespace RxReminder
         {
             InitializeComponent();
             Routing.RegisterRoute(nameof(MedicationInputForm), typeof(MedicationInputForm));
-            Routing.RegisterRoute(nameof(MedicationDetailView), typeof(MedicationDetailView));
         }
     }
 }
