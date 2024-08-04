@@ -1,67 +1,95 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
-            xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-            xmlns:vm="clr-namespace:RxReminder.ViewModels"
-            x:Class="RxReminder.Views.MedicationInputForm"
-            x:DataType="vm:MedicationInputFormViewModel"
-            Title="{Binding PageTitle}">
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:vm="clr-namespace:RxReminder.ViewModels"
+             xmlns:converters="clr-namespace:RxReminder.Converters"
+             x:Class="RxReminder.Views.MedicationInputForm"
+             x:DataType="vm:MedicationInputFormViewModel"
+             Title="{Binding PageTitle}">
+    <ScrollView>
+        <Grid Padding="10">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="Auto" />
+                <ColumnDefinition Width="*" />
+            </Grid.ColumnDefinitions>
 
-    <Grid Padding="10">
-        <Grid.RowDefinitions>
-            <RowDefinition Height="Auto" />
-            <RowDefinition Height="Auto" />
-            <RowDefinition Height="Auto" />
-            <RowDefinition Height="Auto" />
-            <RowDefinition Height="Auto" />
-            <RowDefinition Height="Auto" />
-            <RowDefinition Height="Auto" />
-            <RowDefinition Height="Auto" />
-            <RowDefinition Height="Auto" />
-        </Grid.RowDefinitions>
-        <Grid.ColumnDefinitions>
-            <ColumnDefinition Width="Auto" />
-            <ColumnDefinition Width="*" />
-        </Grid.ColumnDefinitions>
+            <!-- Name Entry -->
+            <Label Grid.Row="0" Grid.Column="0" Text="Name:" VerticalOptions="End" />
+            <Entry Grid.Row="0" Grid.Column="1" Placeholder="Name" Text="{Binding Name}" 
+           VerticalTextAlignment="End" />
 
-        <!-- Name Entry -->
-        <Label Grid.Row="0" Grid.Column="0" Text="Name:" VerticalOptions="End" />
-        <Entry Grid.Row="0" Grid.Column="1" Placeholder="Name" Text="{Binding Name}" 
-            VerticalTextAlignment="End" />
+            <!-- Rx Number Entry -->
+            <Label Grid.Row="1" Grid.Column="0" Text="Rx Number:" VerticalOptions="End" />
+            <Entry Grid.Row="1" Grid.Column="1" Placeholder="Rx Number" Text="{Binding RxNumber}" 
+           VerticalTextAlignment="End" Margin="0,20,0,0" />
 
-        <!-- Rx Number Entry -->
-        <Label Grid.Row="1" Grid.Column="0" Text="Rx Number:" VerticalOptions="End" />
-        <Entry Grid.Row="1" Grid.Column="1" Placeholder="Rx Number" Text="{Binding RxNumber}" 
-            VerticalTextAlignment="End" Margin="0,20,0,0" />
+            <!-- Dosage Entry -->
+            <Label Grid.Row="2" Grid.Column="0" Text="Dosage:" VerticalOptions="End" />
+            <Entry Grid.Row="2" Grid.Column="1" Placeholder="Dosage" Text="{Binding Dosage}" 
+           VerticalTextAlignment="End" Margin="0,20,0,0" />
 
-        <!-- Dosage Entry -->
-        <Label Grid.Row="2" Grid.Column="0" Text="Dosage:" VerticalOptions="End" />
-        <Entry Grid.Row="2" Grid.Column="1" Placeholder="Dosage" Text="{Binding Dosage}" 
-            VerticalTextAlignment="End" Margin="0,20,0,0" />
+            <!-- Notes Entry -->
+            <Label Grid.Row="3" Grid.Column="0" Text="Notes:" VerticalOptions="End" />
+            <Entry Grid.Row="3" Grid.Column="1" Placeholder="Notes" Text="{Binding Notes}" 
+           VerticalTextAlignment="End" Margin="0,20,0,0" />
 
-        <!-- Notes Entry -->
-        <Label Grid.Row="3" Grid.Column="0" Text="Notes:" VerticalOptions="End" />
-        <Entry Grid.Row="3" Grid.Column="1" Placeholder="Notes" Text="{Binding Notes}" 
-            VerticalTextAlignment="End" Margin="0,20,0,0" />
+            <!-- Total Doses -->
+            <Label Grid.Row="4" Grid.Column="0" Text="Total Doses:" VerticalOptions="End" />
+            <Entry Grid.Row="4" Grid.Column="1" Placeholder="Total Doses" Keyboard="Numeric" 
+                   Text="{Binding TotalDoses, Converter={StaticResource converters:IntConverter}}" 
+                   VerticalTextAlignment="End" Margin="0,20,0,0" />
 
-        <!-- Total Doses -->
-        <Label Grid.Row="4" Grid.Column="0" Text="Total Doses:" VerticalOptions="End" />
-        <Entry Grid.Row="4" Grid.Column="1" Placeholder="Total Doses" Keyboard="Numeric" 
-            Text="{Binding TotalDoses}" VerticalTextAlignment="End" Margin="0,20,0,0" />
+            <!-- Refill Threshold -->
+            <Label Grid.Row="5" Grid.Column="0" Text="Refill Threshold:" VerticalOptions="End" />
+            <Entry Grid.Row="5" Grid.Column="1" Placeholder="Refill Threshold" Keyboard="Numeric" 
+                   Text="{Binding RefillThreshold, Converter={StaticResource converters:IntConverter}}" 
+                   VerticalTextAlignment="End" Margin="0,20,0,0" />
 
-        <!-- Refill Threshold -->
-        <Label Grid.Row="5" Grid.Column="0" Text="Refill Threshold:" VerticalOptions="End" />
-        <Entry Grid.Row="5" Grid.Column="1" Placeholder="Refill Threshold" Keyboard="Numeric" 
-            Text="{Binding RefillThreshold}" VerticalTextAlignment="End" Margin="0,20,0,0" />
 
-        <!-- Save Button -->
-        <Button Grid.Row="6" Grid.ColumnSpan="2" Text="Save" 
+            <!-- First Notification -->
+            <Label Grid.Row="6" Grid.Column="0" Text="First Notification:" VerticalOptions="End" />
+            <DatePicker Grid.Row="6" Grid.Column="1" Date="{Binding FirstNotification}" 
+                VerticalOptions="End" Margin="0,20,0,0" />
+            <TimePicker Grid.Row="7" Grid.Column="1" Time="{Binding FirstNotification.TimeOfDay}" 
+                VerticalOptions="End" Margin="0,20,0,0" />
+
+            <!-- Repeat Interval -->
+            <Label Grid.Row="8" Grid.Column="0" Text="Repeat Interval:" VerticalOptions="End" />
+            <StackLayout Grid.Row="8" Grid.Column="1" Orientation="Vertical" Margin="0,20,0,0">
+                <RadioButton Content="Days" Value="Days" IsChecked="{Binding IsDays, Mode=TwoWay}" />
+                <RadioButton Content="Hours" Value="Hours" IsChecked="{Binding IsHours, Mode=TwoWay}" />
+                <RadioButton Content="Minutes" Value="Minutes" IsChecked="{Binding IsMinutes, Mode=TwoWay}" />
+            </StackLayout>
+
+            <!-- Enter the amount -->
+            <Label Grid.Row="9" Grid.Column="0" Text="Enter the amount:" VerticalOptions="End" />
+            <Entry Grid.Row="9" Grid.Column="1" Placeholder="Enter the amount" 
+           Keyboard="Numeric" Text="{Binding RepeatAmount, Converter={StaticResource IntConverter}}"
+           VerticalTextAlignment="End" Margin="0,20,0,0" />
+
+            <!-- Save Button -->
+            <Button Grid.Row="10" Grid.ColumnSpan="2" Text="Save" 
         VerticalOptions="EndAndExpand" 
         HorizontalOptions="FillAndExpand" 
         Command="{Binding SaveMedicationCommand}" 
         Margin="0,20,0,0"/>
 
-        <!-- Delete Button -->
-        <Button Grid.Row="7" Grid.ColumnSpan="2" Text="Delete" 
+            <!-- Delete Button -->
+            <Button Grid.Row="11" Grid.ColumnSpan="2" Text="Delete" 
         VerticalOptions="EndAndExpand" 
         HorizontalOptions="FillAndExpand" 
         Command="{Binding DeleteMedicationCommand}" 
@@ -69,15 +97,17 @@
         BackgroundColor="Red" 
         TextColor="White" 
         Margin="0,20,0,0"/>
-    </Grid>
+        </Grid>
+    </ScrollView>
 </ContentPage>
+
 
 <!--
 
 TODO:
     
 - Add validation to ensure required fields are filled out correctly
-- Add Reminders section to allow user to set reminders for medication
-- Add database functionality to save new medication to database
+- Add database functionality to save new medication to a database
+- Add ability for users to categorize medications
 
 -->

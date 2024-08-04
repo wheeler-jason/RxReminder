@@ -19,11 +19,13 @@
 
         <!-- CollectionView to display the list of medications -->
         <CollectionView Grid.Row="1" ItemsSource="{Binding Medications}"
-                        SelectionMode="Single"
-                        SelectionChanged="OnMedicationSelected">
+                        SelectionMode="Single">
             <CollectionView.ItemTemplate>
                 <DataTemplate>
                     <Frame BorderColor="LightGray" CornerRadius="10" Padding="10" Margin="5">
+                        <Frame.GestureRecognizers>
+                            <TapGestureRecognizer Command="{Binding Source={RelativeSource AncestorType={x:Type vm:MedicationListViewModel}}, Path=SelectMedicationCommand}" CommandParameter="{Binding .}" />
+                        </Frame.GestureRecognizers>
                         <Label Text="{Binding Name}" FontSize="Medium" />
                     </Frame>
                 </DataTemplate>
@@ -35,9 +37,25 @@
 <!--
     
 TODO:
-- Add more details to collectionview items
-- Add command to navigate to MedicationDetailView when item is selected
-    - Remove OnMedicationSelected event handler
+- Add more details to CollectionView items
+    - Add label for other property of Medication such as Dosage
+    or repeat interval
+    
+    
+    
+-->
+
+<!--
+    
+    SelectionChanged="OnMedicationSelected"
+    
+    <CollectionView.ItemTemplate>
+    <DataTemplate>
+        <Frame BorderColor="LightGray" CornerRadius="10" Padding="10" Margin="5">
+            <Label Text="{Binding Name}" FontSize="Medium" />
+        </Frame>
+    </DataTemplate>
+    </CollectionView.ItemTemplate>
     
 -->
     

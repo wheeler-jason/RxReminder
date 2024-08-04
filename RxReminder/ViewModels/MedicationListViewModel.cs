@@ -22,6 +22,16 @@ namespace RxReminder.ViewModels
         }
 
         [RelayCommand]
+        private async Task SelectMedication(Medication medication)
+        {
+            await Shell.Current.GoToAsync(nameof(MedicationInputForm), new Dictionary<string, object>
+            {
+                { "Medication", medication },
+                { "Medications", Medications }
+            });
+        }
+
+        [RelayCommand]
         private async Task AddNewMedicationAsync()
         {
             var navigationParameter = new Dictionary<string, object>

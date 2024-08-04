@@ -27,6 +27,21 @@ namespace RxReminder.ViewModels
         private string rxNumber;
 
         [ObservableProperty]
+        private DateTime firstNotification;
+
+        [ObservableProperty]
+        private bool isDays = true;
+
+        [ObservableProperty]
+        private bool isHours;
+
+        [ObservableProperty]
+        private bool isMinutes;
+
+        [ObservableProperty]
+        private int repeatAmount;
+
+        [ObservableProperty]
         private string pageTitle;
 
         [ObservableProperty]
@@ -55,6 +70,9 @@ namespace RxReminder.ViewModels
                 TotalDoses = medication.TotalDoses;
                 RefillThreshold = medication.RefillThreshold;
                 RxNumber = medication.RxNumber;
+                FirstNotification = medication.FirstNotification;
+                RepeatAmount = (int)medication.RepeatInterval.TotalDays; // Assuming default is days
+                IsDays = true; // Default to days for existing medication
             }
             else
             {
@@ -66,12 +84,31 @@ namespace RxReminder.ViewModels
                 TotalDoses = 0;
                 RefillThreshold = 0;
                 RxNumber = string.Empty;
+                FirstNotification = DateTime.Now;
+                RepeatAmount = 1; // Default repeat amount
+                IsDays = true; // Default to days
             }
         }
 
         [RelayCommand]
         private async Task SaveMedicationAsync()
         {
+            TimeSpan repeatInterval;
+
+            if (IsDays)
+            {
+                repeatInterval = TimeSpan.FromDays(RepeatAmount);
+            }
+            else if (IsHours)
+            {
+                repeatInterval = TimeSpan.FromHours(RepeatAmount);
+            }
+            else // IsMinutes
+            {
+                repeatInterval = TimeSpan.FromMinutes(RepeatAmount);
+            }
+
+
             if (IsEditing)
             {
                 ExistingMedication.Name = Name;
@@ -80,6 +117,8 @@ namespace RxReminder.ViewModels
                 ExistingMedication.TotalDoses = TotalDoses;
                 ExistingMedication.RefillThreshold = RefillThreshold;
                 ExistingMedication.RxNumber = RxNumber;
+                ExistingMedication.FirstNotification = FirstNotification;
+                ExistingMedication.RepeatInterval = repeatInterval;
 
                 var index = Medications.IndexOf(ExistingMedication);
                 if (index != -1)
@@ -96,7 +135,9 @@ namespace RxReminder.ViewModels
                     Notes = Notes,
                     TotalDoses = TotalDoses,
                     RefillThreshold = RefillThreshold,
-                    RxNumber = RxNumber
+                    RxNumber = RxNumber,
+                    FirstNotification = FirstNotification,
+                    RepeatInterval = repeatInterval
                 };
 
                 Medications.Add(newMedication);

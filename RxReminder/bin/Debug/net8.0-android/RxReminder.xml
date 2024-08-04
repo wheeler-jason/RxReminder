@@ -1,0 +1,180 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>RxReminder</name>
+    </assembly>
+    <members>
+        <member name="T:RxReminder.ViewModels.MedicationInputFormViewModel">
+            <inheritdoc/>
+            <inheritdoc/>
+            <inheritdoc/>
+        </member>
+        <member name="P:RxReminder.ViewModels.MedicationInputFormViewModel.Name">
+            <inheritdoc cref="F:RxReminder.ViewModels.MedicationInputFormViewModel.name"/>
+        </member>
+        <member name="P:RxReminder.ViewModels.MedicationInputFormViewModel.Dosage">
+            <inheritdoc cref="F:RxReminder.ViewModels.MedicationInputFormViewModel.dosage"/>
+        </member>
+        <member name="P:RxReminder.ViewModels.MedicationInputFormViewModel.Notes">
+            <inheritdoc cref="F:RxReminder.ViewModels.MedicationInputFormViewModel.notes"/>
+        </member>
+        <member name="P:RxReminder.ViewModels.MedicationInputFormViewModel.TotalDoses">
+            <inheritdoc cref="F:RxReminder.ViewModels.MedicationInputFormViewModel.totalDoses"/>
+        </member>
+        <member name="P:RxReminder.ViewModels.MedicationInputFormViewModel.RefillThreshold">
+            <inheritdoc cref="F:RxReminder.ViewModels.MedicationInputFormViewModel.refillThreshold"/>
+        </member>
+        <member name="P:RxReminder.ViewModels.MedicationInputFormViewModel.RxNumber">
+            <inheritdoc cref="F:RxReminder.ViewModels.MedicationInputFormViewModel.rxNumber"/>
+        </member>
+        <member name="P:RxReminder.ViewModels.MedicationInputFormViewModel.FirstNotification">
+            <inheritdoc cref="F:RxReminder.ViewModels.MedicationInputFormViewModel.firstNotification"/>
+        </member>
+        <member name="P:RxReminder.ViewModels.MedicationInputFormViewModel.IsDays">
+            <inheritdoc cref="F:RxReminder.ViewModels.MedicationInputFormViewModel.isDays"/>
+        </member>
+        <member name="P:RxReminder.ViewModels.MedicationInputFormViewModel.IsHours">
+            <inheritdoc cref="F:RxReminder.ViewModels.MedicationInputFormViewModel.isHours"/>
+        </member>
+        <member name="P:RxReminder.ViewModels.MedicationInputFormViewModel.IsMinutes">
+            <inheritdoc cref="F:RxReminder.ViewModels.MedicationInputFormViewModel.isMinutes"/>
+        </member>
+        <member name="P:RxReminder.ViewModels.MedicationInputFormViewModel.RepeatAmount">
+            <inheritdoc cref="F:RxReminder.ViewModels.MedicationInputFormViewModel.repeatAmount"/>
+        </member>
+        <member name="P:RxReminder.ViewModels.MedicationInputFormViewModel.PageTitle">
+            <inheritdoc cref="F:RxReminder.ViewModels.MedicationInputFormViewModel.pageTitle"/>
+        </member>
+        <member name="P:RxReminder.ViewModels.MedicationInputFormViewModel.IsEditing">
+            <inheritdoc cref="F:RxReminder.ViewModels.MedicationInputFormViewModel.isEditing"/>
+        </member>
+        <member name="F:RxReminder.ViewModels.MedicationInputFormViewModel.saveMedicationCommand">
+            <summary>The backing field for <see cref="P:RxReminder.ViewModels.MedicationInputFormViewModel.SaveMedicationCommand"/>.</summary>
+        </member>
+        <member name="P:RxReminder.ViewModels.MedicationInputFormViewModel.SaveMedicationCommand">
+            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IAsyncRelayCommand"/> instance wrapping <see cref="M:RxReminder.ViewModels.MedicationInputFormViewModel.SaveMedicationAsync"/>.</summary>
+        </member>
+        <member name="F:RxReminder.ViewModels.MedicationInputFormViewModel.deleteMedicationCommand">
+            <summary>The backing field for <see cref="P:RxReminder.ViewModels.MedicationInputFormViewModel.DeleteMedicationCommand"/>.</summary>
+        </member>
+        <member name="P:RxReminder.ViewModels.MedicationInputFormViewModel.DeleteMedicationCommand">
+            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IAsyncRelayCommand"/> instance wrapping <see cref="M:RxReminder.ViewModels.MedicationInputFormViewModel.DeleteMedicationAsync"/>.</summary>
+        </member>
+        <member name="T:RxReminder.ViewModels.MedicationListViewModel">
+            <inheritdoc/>
+            <inheritdoc/>
+            <inheritdoc/>
+        </member>
+        <member name="P:RxReminder.ViewModels.MedicationListViewModel.Medications">
+            <inheritdoc cref="F:RxReminder.ViewModels.MedicationListViewModel.medications"/>
+        </member>
+        <member name="F:RxReminder.ViewModels.MedicationListViewModel.selectMedicationCommand">
+            <summary>The backing field for <see cref="P:RxReminder.ViewModels.MedicationListViewModel.SelectMedicationCommand"/>.</summary>
+        </member>
+        <member name="P:RxReminder.ViewModels.MedicationListViewModel.SelectMedicationCommand">
+            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IAsyncRelayCommand`1"/> instance wrapping <see cref="M:RxReminder.ViewModels.MedicationListViewModel.SelectMedication(RxReminder.Models.Medication)"/>.</summary>
+        </member>
+        <member name="F:RxReminder.ViewModels.MedicationListViewModel.addNewMedicationCommand">
+            <summary>The backing field for <see cref="P:RxReminder.ViewModels.MedicationListViewModel.AddNewMedicationCommand"/>.</summary>
+        </member>
+        <member name="P:RxReminder.ViewModels.MedicationListViewModel.AddNewMedicationCommand">
+            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IAsyncRelayCommand"/> instance wrapping <see cref="M:RxReminder.ViewModels.MedicationListViewModel.AddNewMedicationAsync"/>.</summary>
+        </member>
+        <member name="T:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs">
+            <summary>
+            A helper type providing cached, reusable <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instances
+            for all properties generated with <see cref="T:CommunityToolkit.Mvvm.ComponentModel.ObservablePropertyAttribute"/>.
+            </summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.Name">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "Name" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.Dosage">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "Dosage" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.Notes">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "Notes" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.TotalDoses">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "TotalDoses" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.RefillThreshold">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "RefillThreshold" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.RxNumber">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "RxNumber" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.FirstNotification">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "FirstNotification" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.IsDays">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "IsDays" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.IsHours">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "IsHours" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.IsMinutes">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "IsMinutes" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.RepeatAmount">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "RepeatAmount" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.PageTitle">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "PageTitle" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.IsEditing">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "IsEditing" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.Medications">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "Medications" generated properties.</summary>
+        </member>
+        <member name="T:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs">
+            <summary>
+            A helper type providing cached, reusable <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instances
+            for all properties generated with <see cref="T:CommunityToolkit.Mvvm.ComponentModel.ObservablePropertyAttribute"/>.
+            </summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.Name">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "Name" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.Dosage">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "Dosage" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.Notes">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "Notes" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.TotalDoses">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "TotalDoses" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.RefillThreshold">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "RefillThreshold" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.RxNumber">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "RxNumber" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.FirstNotification">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "FirstNotification" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.IsDays">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "IsDays" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.IsHours">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "IsHours" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.IsMinutes">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "IsMinutes" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.RepeatAmount">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "RepeatAmount" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.PageTitle">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "PageTitle" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.IsEditing">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "IsEditing" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.Medications">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "Medications" generated properties.</summary>
+        </member>
+    </members>
+</doc>

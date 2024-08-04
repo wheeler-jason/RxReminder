@@ -13,6 +13,8 @@ namespace RxReminder.Models
         private int _totalDoses;
         private int _refillThreshold;
         private string _rxNumber;
+        private DateTime _firstNotification;
+        private TimeSpan _repeatInterval;
 
         [PrimaryKey, AutoIncrement]
         public int Id
@@ -55,6 +57,18 @@ namespace RxReminder.Models
         {
             get => _rxNumber;
             set => SetProperty(ref _rxNumber, value);
+        }
+
+        public DateTime FirstNotification
+        {
+            get => _firstNotification;
+            set => SetProperty(ref _firstNotification, value);
+        }
+
+        public TimeSpan RepeatInterval
+        {
+            get => _repeatInterval;
+            set => SetProperty(ref _repeatInterval, value);
         }
     }
 }
